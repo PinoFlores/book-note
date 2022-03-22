@@ -8,8 +8,12 @@
     "packages/book-note-server",
     "packages/book-ui-library"
   ],
+  "engines": {
+    "npm" : "7.9.0"
+  },
   "main": "index.js",
   "scripts": {
+    "build" : "npm run build --workspace=book-note-ui",
     "back:test": "npm run test --w book-note-server"
   },
   "keywords": [],
