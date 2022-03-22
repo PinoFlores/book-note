@@ -9,11 +9,12 @@
     "packages/book-ui-library"
   ],
   "engines": {
-    "npm" : "7.9.0"
+    "npm": "7.9.0"
   },
   "main": "index.js",
   "scripts": {
-    "build" : "npm run build --workspace=book-note-ui",
+    "build": "npm run build --workspace=book-note-ui",
+    "serve": "serve -s build --workspace=book-note-ui",
     "back:test": "npm run test --w book-note-server"
   },
   "keywords": [],
@@ -34,5 +35,7 @@
     "url": "https://github.com/BeyMendoza/book-note/issues"
   },
   "homepage": "https://github.com/BeyMendoza/book-note#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
 }
